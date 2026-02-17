@@ -48,10 +48,20 @@ function longueurSuperieureA3(chaines) {
     }, true);
 }
 
+// ex 5
+
+
 // ex 6
 function agesSuperieursA30(people) {
     return reduce(people, function(acc) {
       return acc.age > 30;
+    });
+}
+
+// ex 7
+function tousOntPrenom(people) {
+    return reduce(people, function(person) {
+      return person.name.first.length > 0;
     });
 }
 
