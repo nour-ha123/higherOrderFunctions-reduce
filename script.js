@@ -57,7 +57,7 @@ function agesSuperieursA30(people) {
 
 // ex8
 function prenomsLongs(people) {
-    return every(people, function(person) {
+    return reduce(people, function(person) {
       return person.name.first.length >= 3;
     });
 }
@@ -73,7 +73,7 @@ function sommeAgesSup200(people) {
 
 // ex10
 function nomsMajuscule(people) {
-    return every(people, function(person) {
+    return reduce(people, function(person) {
       var nom = person.name.last;
       return nom[0] === nom[0].toUpperCase();
     });
